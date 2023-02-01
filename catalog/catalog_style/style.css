@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#no {
+    color: gray;
+}
+/* выпадающее меню корзины */
+#dropdown_box {
+    background-color: #040A0A;
+    width: 430px;
+    height: 1000px;
+    z-index: 1;
+}
+#dropdown_box >h3 {
+    color: #43FFD2;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+#close_corzina {
+    padding-left: 120px;
+    cursor: pointer;
+}
+#line_corz {
+    margin-left: 30px;
+}
+#neon_pink_elips {
+    background-color: #7D2253;
+    filter: blur(125px);
+    transform: rotate(32.83deg);
+    width: 504px;
+    height: 360px;
+    position: absolute;
+    left: 350px;
+    top: 325px;  
+}
+/* невыд блок */
+.hidden_menu_corz {
+    position: fixed;
+    top: 0;
+    right: -500px;
+}
+/* видимый блок */
+.visib_menu_corz {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+/* начало шапки */
+.header_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    width: 50%;
+    height: 60px;
+    position: absolute;
+}
+/* иконка лого */
+#img_logo {
+    margin-right: 70px;
+}
+/* иконка поиск */
+#img_search {
+  padding-right: 10px;
+}
+/* кнопки */
+.bt_header {
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 124px;
+    height: 21px;
+    font-size: 14px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.filt_bl {
+    position: fixed;
+    top: 0;
+    left: -2000px;
+    background-color: rgb(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+}
+.filt_bl_on {
+    left: 0;
+}
+/* email, доставка, адрес улица */
+#email_street {
+    position: absolute;
+    right: 130px;
+    top: 20px;
+    width: 170px;
+    height: 150px;
+    text-align: right;
+}
+#email_street >div {
+    color: #43FFD2;
+    font-family: 'Oswald';
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase; 
+}
+#email_street >p {
+    font-family: 'Oswald';
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase; 
+    line-height: 30px;
+    color: white;
+    letter-spacing: 0.1em;
+}
+#email_street_blue_txt {
+    margin-top: 20px;
+}
+#no_holidays {
+    margin-top: -13px;
+}
+#img_icon_social {
+    position: absolute;
+    text-align: center;
+    white-space: pre-line;
+    right: 130px;
+    top: 250px;
+    background-color: rgb(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    height: 154px;
+    width: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+#img_icon_social > img {
+    width: 24.98px;
+    height: 24.98px;
+    margin-top: 8px;
+}
+#img_icon_social > img:hover{
+    transform: scale(0.8);
+}
+.corzina {
+    margin-top: 500px;
+    margin-left: 110px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+}
+.corzina:hover {
+    transform: scale(0.8);
+}
+.corzina {
+    margin-top: 500px;
+    margin-left: 110px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+}
+#corzina:hover {
+    transform: scale(0.8);
+}
+/* аним выпадание */
+#dropdown_box {
+    transition: all 0.4s ease;
+}
+.back_petite_corz {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: -75px;
+    top: 30px;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* конец шапки */
+/* КАРТИНКА ВСЕГО БЛОКА */
+#main_im_flow {
+    width: 1117px; 
+}
+#main_im_flow2 {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    z-index: -1;
+}
+#main_im_flow3 {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    background-color: #7D2253;
+    filter: blur(125px);
+    width: 392px;
+    height: 280px;
+    z-index: -1;
+}
+#main_im_flow4 {
+    position: absolute;
+    top: 746px;
+    right: 140px;
+    width: 434px;
+    height: 256px;
+    background-color: #7D2253;
+    filter: blur(125px);
+    transform: rotate(32.83deg);
+}
+#main_im_elips_pink1 {
+    position: absolute;
+    width: 500px;
+    height: 368px;
+    left: 0px;
+    top: 400px;
+    z-index: -1;
+    background: #7D2253;
+    filter: blur(125px);
+    transform: rotate(32.83deg);
+}
+#main_im_elips_pink2 {
+    position: absolute;
+    width: 500px;
+    height: 360px;
+    left: 0px;
+    top: 1000px;
+    z-index: -1;
+    background: #7D2253;
+    filter: blur(125px);
+    transform: rotate(32.83deg);
+}
+body {
+    margin-top: -5px;
+    width: 100%;
+        height: 1500px;
+    background-color: #040A0A;
+}
+.main_catal_txt {
+    position: absolute;
+    top: 170px;
+    left: 14%;
+}
+#catal_txt {
+    margin-top: 50px;
+    margin-left: 280px;
+}
+.main_catal_txt >p {
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Oswald';
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-left: 40%;
+    margin-top: 30px;
+}
+/* фильтр подборки */
+.filter_podborki {
+    width: 255px;
+    height: 900px;
+    background-color: rgb(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    position: absolute;
+    top: 800px;
+    left: 15%;
+}
+.filter_podborki >h3 {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Oswald';
+    font-style: normal;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #43FFD2;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.filter_podborki >li {
+    list-style-type: none;
+    position: relative;
+    top: -20px;
+    left: 50px;
+    color: white;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.filter_podborki >img {
+    width: 14px;
+    height: 14px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+#rectang_filt {
+  margin-top: 20px;
+}
+#rectang_filt_next {
+    margin-top: -190px;
+}
+/* кнопка сбросить фильтр */
+.filter_podborki >button {
+    background-color: transparent;
+    width: 223px;
+    height: 50px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    color: white;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+/* БЛОК ДЛЯ СМЕНЫ КОНТЕНТА */
+.conten_block {
+    width: 60%;
+    height: 1600px;
+    position: absolute;
+    left: 30%;
+    top: 810px;
+}
+.conten_block {
+    cursor: pointer;
+    margin-top: -50px;
+}
+.bl_hov:hover {
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+.conten_block >img {
+    width: 255px;
+    height: 335px;
+    display: inline;
+}
+#coor_img_flow {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.conten_block >div {
+    display: inline-block;
+}
+/* стиль текста */
+.block_opis_btn_cont {
+    margin-left: 20px;
+}
+.block_opis_btn_cont >p {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.block_opis_btn_cont >span {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 30px;
+}
+.block_opis_btn_cont >button {
+    width: 255px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+    color: white;
+    border: 1px solid white;
+}
+.block_opis_btn_cont >button:hover {
+    color: #43FFD2;
+    border-color: #43FFD2;
+    transition: all 1s ease;
+}
+.navverh {
+    position: relative;
+    left: 15%;
+    top: 1300px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+   
+}
+.fon_btn_navert {
+    z-index: -1;
+    margin-top: 300px;
+    margin-left: 5%; 
+}

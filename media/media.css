@@ -1,0 +1,419 @@
+@media(max-width: 1653px) {
+    #lower-flower_txt {
+       font-size: 150px;
+       width: 750px;
+    }
+    #block_lower-flower_txt >p {
+        width: 750px;
+    }
+    #btn_smotret_catalog {
+        position: relative;
+        left: 40%;
+        transform: translate(-50%, 0);
+    }
+    /* end */
+    .img_foot_insta {
+       top: -100px;
+    }
+    #foot_insta_txt {
+        top: 150px;
+    }
+    #podpis {
+        top: -200px;
+    }
+    .el_pin_blu {
+        top: -150px;
+    }
+
+}
+@media(max-width: 1558px) {
+   .end_vopr {
+    margin-top: 80px;
+   }
+   .end_vopr {
+    position: relative;
+    top: -500px;
+   }
+   #wood {
+    top: 0;
+    float: left;
+   }
+   .bl_form {
+    right: -100px;
+   }
+}
+@media(max-width: 1556px) {
+    #block_cat_txt {
+        margin-left: 5%;
+    }
+    .im_bl_pov {
+        left: 45%;
+    }
+    .im_bl_pov img {
+        margin-bottom: 15px;
+    }
+    #item_wid_4 {
+        margin-top: -10px;
+    }
+    #foot_insta_txt {
+        top: -400px;
+    }
+    .img_foot_insta {
+        top: -650px;
+    }
+    #podpis {
+        top: -920px;
+    }
+    .el_pin_blu {
+        top: -800px;
+    }
+}
+@media(max-width: 1548px) {
+    .all_bl_flow {
+        height: 1280px;
+        top: 250px;
+    }
+    #watch_all_catal {
+        margin-top: 180px;
+    }
+    #elipse_bl {
+        margin-top: -500px;
+    }
+    #elipse_bl_pink {
+        width: 40%;
+    }
+}
+@media(max-width: 1530px) {
+    .poblock_gotov_buketi {
+        right: 5%;
+    }
+    .podblock_dopolnitelno {
+        right: 5%;
+    }
+}
+@media(max-width: 1492px) {
+    /* end */
+    .img_foot_insta {
+        top: -950px;
+     }
+     #foot_insta_txt {
+         top: -650px;
+     }
+     #podpis {
+         top: -1220px;
+     }
+     .el_pin_blu {
+         top: -1000px;
+     }
+}
+@media(max-width: 1492px) {
+    #item_wid_4 {
+        position: relative;
+        left: -180px;
+        margin-top: 295px; 
+    }
+    .end_vopr {
+        top: -800px;
+    }
+}
+@media(max-width: 1453px) {
+    /* end */
+    .img_foot_insta {
+        top: -750px;
+    }
+    #foot_insta_txt {
+        top: -450px;
+    }
+    #podpis {
+        top: -1020px;
+    }
+    .el_pin_blu {
+        top: -800px;
+    }
+}
+@media(max-width: 1452px) {
+    .podblock_flower {
+        left: 5%;
+    }
+    .end_vopr {
+        height: 920px;
+    }
+    .bl_form {
+        top: 0;
+    }
+}
+@media(max-width: 1345px) {
+    .bl_pink_top {
+        left: 430px;
+    }
+    .bl_pink_top_right {
+        left: 730px;
+    }
+}
+@media(max-width: 1313px) {
+/* end */
+    .img_foot_insta {
+        top: -250px;
+    }
+    #foot_insta_txt {
+        top: 0px;
+    }
+    #podpis {
+        top: -500px;
+    }
+    .el_pin_blu {
+        top: -400px;
+    }
+
+}
+@media(max-width: 1312px) {
+    .header_btn {
+        width: 500px;
+    }
+    #lower-flower_txt {
+        font-size: 100px;
+        width: 550px;
+    }
+    #block_lower-flower_txt {
+        width: 550px;
+    }
+    #block_lower-flower_txt >p {
+        width: 550px;
+    }
+    #btn_smotret_catalog {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .bt_header {
+        padding-left: 30px;
+    }
+    #block_cat_txt >p {
+        margin-left: 0;
+    }
+    #elip_neon_blue {
+        width: 700px;
+    }
+    #elip_neon_pink {
+        width: 700px;
+    }
+    #item_wid_4 {
+        display: none;
+    }
+    .end_vopr {
+        top: -300px;
+        height: 1200px;
+    }
+    .bl_form {
+        top: 300px;
+    }
+}
+@media(max-width: 1283px) {
+    .podblock_dopolnitelno {
+        width: 330px;
+    }
+    .podblock_dopolnitelno >button{
+        margin-left: 50px;
+    }
+    .im_bl_pov {
+        width: 40%;
+    }
+}
+@media(max-width: 1243px) {
+    .im_bl_pov { 
+        left: 50%;
+    }
+    #el_en_big {
+        width: 200px;
+    }
+}
+@media(max-width: 1193px) {
+    .poblock_gotov_buketi {
+        width: 330px;
+    }
+    .poblock_gotov_buketi >button{
+        margin-left: 50px;
+    }
+}
+@media(max-width: 1166px) {
+/* end */
+    .img_foot_insta {
+        top: 50px;
+    }
+    #foot_insta_txt {
+        top: 300px;
+    }
+    #podpis {
+        top: -220px;
+    }
+    .el_pin_blu {
+        top: 20px;
+    }
+}
+@media(max-width: 1165px) {
+    .im_bl_pov {
+        top: 0;
+        left: 15%;
+        display: inline-block;
+        width: 70%;
+        height: 400px;
+    }
+    .bl_items {
+        position: relative;
+        left: 15%;
+    }
+    .end_vopr {
+        top: 0;
+    }
+}
+@media(max-width: 1156px) {
+    .bl_pink_top_right {
+        position: relative;
+        top: 450px;
+        left: 430px;
+    }
+    .osob_povod {
+        margin-top: 570px;
+    }
+    .im_bl_pov {
+        width: 750px;
+    }
+}
+@media(max-width: 1070px) {
+    .im_bl_pov {
+        position: relative;
+        width: 70%;
+    }
+}
+@media(max-width: 1045px) {
+    .podblock_flower {
+        width: 330px;
+    }
+    .podblock_flower >button {
+        margin-left: 50px;
+    }
+}@media(max-width: 1036px) {
+    .all_bl_flow {
+        height: 1950px;
+    }
+    #watch_all_catal {
+            margin-top: 120px;
+    }
+    #elipse_bl {
+        margin-top: -800px;
+    }
+    #elipse_bl_pink {
+        width: 40%;
+        
+    }
+}
+@media(max-width: 1029px) {
+    .poblock_gotov_buketi {
+        margin-top: -580px;
+    }
+    .podblock_dopolnitelno {
+        margin-top: -230px;
+    }
+    #main_im_flow {
+        width: 100%;
+    }
+    #email_street {
+        left: 700px;
+    }
+    #img_icon_social {
+        left: 800px;
+    }
+    #bl_filter {
+        margin-top: 150px;
+    }
+    .foot_insta_txt {
+        width: 400px;
+    }
+}
+@media(max-width: 1007px) {
+    #foot_insta_txt {
+        width: 600px;
+    }
+}
+@media(max-width: 970px) {
+    #povod {
+        margin-left: 0;
+    }
+    .osob_povod {
+        width: 700px;
+    }
+    #lin_pin {
+        margin-top: 120px;
+        left: 0;
+    }
+}
+@media(max-width: 930px) {
+    body {
+        width: 924px;
+    }
+    #txt_buket_fon {
+        position: relative;
+        left: 400px;
+    }
+    #txt_dopolnitel_fon {
+        position: relative;
+        left: 100px;
+    }
+    #elip_neon_blue {
+        left:  275px;
+    }
+    .podblock_flower {
+        margin-top: -700px;
+    }
+    .poblock_gotov_buketi {
+        margin-top: -700px;
+        left: 540px;
+    }
+    .podblock_dopolnitelno {
+        margin-top: -360px;
+        left: 540px;
+    }
+    #img_logo {
+        padding-left: 18%;
+    }
+    #foon_buketi {
+        position: relative;
+        right: 0;
+    }
+    .all_bl_flow {
+        top: -520px;
+    }
+    #elipse_bl {
+        margin-top: -1500px;
+        width: 300px;
+    }
+    #elipse_bl_pink {
+        width: 400px;
+        margin-top: -1100px;
+        left: 200px;
+    }
+    .block_zacaz {
+        margin-top: -750px;
+    }
+    #main_im_flow {
+        width: 970px;   
+    }
+    #foon_pin {
+        left: 420px;
+    }
+    .end_vopr {
+        width: 975px;
+    }
+}
+@media(max-width: 929px) {
+    #watch_all_catal {
+        top: -650px;
+    }
+    .header_btn {
+        margin-left: 60px;
+        
+    }
+    #block_lower-flower_txt {
+        left: 150px;
+    }
+}

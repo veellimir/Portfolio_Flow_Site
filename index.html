@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет магазин LOWER FLOWER</title>
+    <link rel="stylesheet" href="general_style/style.css">
+    <link rel="stylesheet" href="media/media.css">
+    <link rel="stylesheet" href="foonts/oswald.css">
+    <link href="https://fonts.cdnfonts.com/css/cormorant-2" rel="stylesheet">
+</head>
+<header>
+    <!-- выпадающее меню корзины -->
+    <div class="hidden_menu_corz" id="dropdown_box">
+        <div class="back_petite_corz">
+            <img src="img/corzina.png" alt="">
+        </div>
+        <h3>Ваша корзина</h3><img src="img/close.png" alt="" id="close_corzina">
+        <img src="img/Line 220.png" alt="" id="line_corz">
+        <img src="img/Ellipse 59.png" alt="" id="neon_pink_elips">       
+    </div>
+
+
+
+
+    <!-- конец выпадающего меню корзины -->
+    <!-- шапка -->
+    <div class="header_btn">
+        <img src="img/LF.png" alt="Ошибка изображения" id="img_logo">
+        <button class="bt_header" onclick="SmotrCatalog()">Каталог</button>
+        <button class="bt_header" id="no">Доставка и оплата </button>
+        <button class="bt_header" onclick="OnasOpis()">О нас</button>
+        <button class="bt_header" id="no">Контакты</button>
+        <button class="bt_header" id="no">FAQ</button>
+        <button class="bt_header" id="no"><img src="img/Vector.png" alt="Ошибка изображения" id="img_search">поиск</button>
+    </div>
+    <div id="email_street">
+        <div>Kkazancov@gmail.com </div>
+        <p>Доставка 24/7</p>
+        <div id="email_street_blue_txt">ул.агибало*а 1*9</div>
+        <p>с 10:00 до 21:00</p>
+        <p id="no_holidays">без выходных</p>
+        <div class="corzina">
+            <img src="img/corzina.png" alt="Ошибка изображения" id="corzina" title="Корзина">
+        </div>
+        
+    </div>
+    <!-- иконки соц сети -->
+    <div id="img_icon_social">
+        <img src="img/insta.png" alt="Ошибка изображения" onclick="OnInsta()" title="Мы в инстаграмм">
+        <img src="img/viber.png" alt="Ошибка изображения" onclick="OnViber()" title="Мы в Viber">
+        <img src="img/whats.png" alt="Ошибка изображения" onclick="OnWhats()" title="Мы в Whats App">
+    </div>
+    <img src="img/oscn_im_flow.png" alt="Ошибка изображения" id="main_im_flow">
+    <!-- оглавление название сайта -->
+    <div id="block_lower-flower_txt">
+        <div id="lower-flower_txt">lower flower</div>
+        <p>Создаём для тех, кто ценит свежесть и изящество цветка</p>
+        <a href="#block_cat_txt"><button id="btn_smotret_catalog" onmouseover="OnColor()" onmouseout="OffColor()">смотреть каталог</button></a>
+    </div>
+    <!-- блок и текст каталог --> 
+    <div id="block_catalog"></div>
+        
+</header>
+<body>
+    <div id="block_cat_txt">
+        <h3>каталог</h3>
+        <p>У нас самый большой выбор цветов, букетов, открыток и подарков.
+                Мы всегда поможем вам подобрать букет для вашего события, 
+                наш менеджер вас проконсультирует и поможет определиться с выбором</p>
+        <p>Ознакомьтесь с нашими разделами каталога</p>   
+    </div>
+    <img src="img/txt_buket.png" alt="Ошибка изображения" id="txt_buket_fon">
+    <img src="img/flower.png" alt="Ошибка изображения" id="txt_flower_fon">
+    <br>
+    <img src="img/dopolnitel.png" alt="Ошибка изображения" id="txt_dopolnitel_fon">
+    <!-- неон фон -->
+    <div class="neon_foon">
+        <img src="img/ellipse_pink.png" alt="Ошибка изображения" id="elip_neon_pink"> 
+        <img src="img/ellipseblue.png" alt="Ошибка изображения" id="elip_neon_blue">
+    </div>
+    <!-- подблоки в каталоге -->
+    <!-- блок готовые букеты -->
+    <div class="poblock_gotov_buketi">
+        <h3>готовые букеты <br> из сухоцветов</h3>
+        <li>шары</li>
+        <li>для интерьера</li>
+        <li>композиции</li>
+        <button>смотреть каталог</button>
+    </div>
+    <!-- блок цветы -->
+    <div class="podblock_flower">
+        <h3>Сборные букеты</h3>
+        <li>Монобукеты</li>
+        <li>Композиции из цветов</li>
+        <li>розы</li>
+        <li>свадебные</li>
+        <button>смотреть каталог</button>
+    </div>
+    <div class="podblock_dopolnitelno">
+        <h3>шары</h3>
+        <li>Монобукеты</li>
+        <li>игрушки</li>
+        <li>открытки</li>
+        <li>упаковка</li>
+        <button>смотреть каталог</button>
+    </div>
+    <div id="bl_filter">
+        <div class="filt_bl"></div>
+    </div>
+    <div class="name_block_popularbuket">
+        <img src="img/Популярные.png" alt="">
+        <br>
+        <img src="img/букеты.png" alt="" id="buketi">
+        <p>Самые любимые композиции наших клиентов</p>
+    </div>
+    <img src="img/image 115 (1).png" alt="" id="foon_buketi">
+
+    <!--мальенкий блок реклама товаров -->
+    <div class="all_bl_flow">
+
+        <div class="bl_hov">
+        <img src="img/image 1214.png">
+            <div class="block_opis_btn_cont">
+                <p>лучший день</p>
+                <span>1200 р</span>
+                <br>
+                <button id="add_corzina">В корзину</button>
+            </div>
+        </div>  
+        <div class="bl_hov">
+        <img src="img/image 1215 (3).png">
+            <div class="block_opis_btn_cont">
+                <p>лучший день</p>
+                <span>1100 р</span>
+                <br>
+                <button id="add_corzina">В корзину</button>
+            </div>
+        </div>
+        <div class="bl_hov">
+        <img src="img/image 1216 (3).png">
+            <div class="block_opis_btn_cont">
+                <p>лучший день</p>
+                <span>7000 р</span>
+                <br>
+                <button id="add_corzina">В корзину</button>
+            </div>
+        </div>       
+    </div>
+    <a href="catalog/catalog.html" target="_blank"><button id="watch_all_catal">Смотреть весь каталог<img src="img/Arrow 7.png"></button></a>
+    <img src="img/Ellipse 34.png" id="elipse_bl">
+    <img src="img/Ellipse 33.png" id="elipse_bl_pink">
+
+    <div class="block_zacaz">
+        <img src="img/Как сделать.png ">
+        <img src="img/заказ.png">
+    </div>
+    <img src="img/image 122.png" id="flow_pink">
+    <div class="bl_pink_top">
+        <div>
+            <h2>1 Шаг</h2>
+            <p>Выберите какие цветы или подарки <br> 
+            вы хотите купить</p>
+        </div>
+        <div>
+            <h2>2 Шаг</h2>
+            <p>Оформите заказ, и мы отправим вам <br> 
+            подтверждение на электронную почту, <br> 
+            а так же менеджер свяжется с вами <br> 
+            по телефону или в WhatsApp</p>
+        </div>
+        <div>
+            <h2>3 Шаг</h2>
+            <p>Наши флористы бережно подойдут к <br> 
+            созданию букета цветов в самом начале <br> 
+            дня или накануне</p>
+        </div>
+    </div>
+    <div class="bl_pink_top_right">
+        <div>
+            <h2>4 Шаг</h2>
+            <p>Один из наших курьеров или <br> 
+            партнёров доставит ваш заказ по <br> 
+            указанному адресу. Мы отправим <br> 
+            вам сообщение в Whats App как <br> 
+            только заказ будет доставлен</p>
+        </div>
+        <div>
+            <h2>5 Шаг</h2>
+            <p>Наслаждайтесь цветами , если <br> 
+            вы заказали их для дома или <br> 
+            любовью, которой поделились, <br> 
+            если вы заказали для друга</p>
+        </div>
+        <img src="img/avtograff.png" id="aftograff">
+    </div>
+    <div class="osob_povod">
+        <img src="img/особенный.png">
+        <img src="img/Line 12.png" id="lin_pin"><img src="img/повод_.png" id="povod">
+    </div>
+    <div class="bl_items">
+       <span>
+        <p>Мы готовы прийти на помощь и <br> 
+            собрать уникальный букет, на любой <br> 
+            вкус, бюджет и для любого события <br> 
+            по вашему индивидуальному заказу.
+        </p>
+        <ul>
+            <li><p>Учтём даже самые изысканные <br> 
+                пожелания;</p></li>
+            <li><p>подберем свежайшие цветы и сделаем <br> 
+                уникальный букет или композицию;</p>
+            </li>
+            <li><p>оплатить можно при получении или <br> 
+                онлайн на сайте;</p>
+            </li>  
+            <button>собрать индивидуальный букет</button>
+            <img src="img/Arrow 8.png" id="sckloba">
+        </span>
+        </ul>
+    </div>
+    <img src="img/Ellipse 39.png" id="foon_pin">
+    <div class="im_bl_pov">
+        <img src="img/Rectangle 35.png" id="item_wid_1">
+        <img src="img/Rectangle 38.png" id="item_wid_2">
+        <img src="img/Rectangle 37.png" id="item_wid_3">
+        <img src="img/Rectangle 36.png" id="item_wid_4">
+        
+    </div>
+    <div class="end_vopr">
+        <img src="img/остались.png">
+        <img src="img/вопросы_.png" id="vopros">
+        <img src="img/image 12r3.png" id="el_en_pink">
+        <img src="img/Ellipse 40.png" id="el_en_gren">
+        <img src="img/have any questions_.png" id="aftogr">
+        <img src="img/image 123.png" id="wood">
+
+        <div class="bl_form">
+            <img src="img/Line 13.png" id="lin_en">
+            <p>Отправьте ваш вопрос, заказ, <br>
+            предложение или жалобу через форму <br> 
+            обратной связи, и наш специалист <br> 
+            свяжется с вами в течение 15 минут.</p>
+            <form action="">
+                <input type="text" placeholder="ваше имя">
+                <input type="number" placeholder="+7 (927) 777-77-77">
+                <textarea type="text" placeholder="ваш комментарий" id="inp_comment"></textarea>
+                <button>отправить</button>
+                <p id="policy">Нажимая  на кнопку «Отправить», я даю свое согласие на обработку <br> 
+                персональных данных, в соответствии с <span>Политикой конфиденциальности</span></p>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <img src="img/instagram.png" id="foot_insta_txt">
+        <div class="img_foot_insta">
+            <img src="img/Rectangle 44.png" >
+            <img src="img/Rectangle 45.png">
+            <img src="img/Rectangle 46.png">
+            <img src="img/Rectangle 47.png">
+        </div>
+        <img src="img/our social networks.png" id="podpis">
+        <div class="el_pin_blu">
+            <img src="img/Ellipse 43.png">
+            <img src="img/Ellipse 42.png" id="el_en_big">
+        </div>
+        <!-- <div class="END">
+            <div class="ic_soc_end">
+                <img src="img/viber.png">
+                <img src="img/whats.png">
+                <img src="img/insta.png">
+            </div>
+        </div> --> -->
+    </footer>
+    
+
+
+    <script src="script/script.js"></script>
+</body>
+</html>

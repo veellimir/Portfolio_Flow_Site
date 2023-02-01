@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="catalog_style/style.css">
+    <link rel="stylesheet" href="../foonts/oswald.css">
+    <link rel="stylesheet" href="media/media.css">
+</head>
+<header>
+     <!-- выпадающее меню корзины -->
+     <div class="hidden_menu_corz" id="dropdown_box">
+        <div class="back_petite_corz">
+            <img src="../img/corzina.png" alt="">
+        </div>
+        <h3>Ваша корзина</h3><img src="../img/close.png" alt="" id="close_corzina">
+        <img src="../img/Line 220.png" alt="" id="line_corz">
+        <img src="../img/Ellipse 59.png" alt="" id="neon_pink_elips">
+
+        
+    </div>
+    <!-- шапка -->
+    <div class="header_btn">
+        <img src="../img/LF.png" alt="" id="img_logo">
+        <a href="../index.html"><button class="bt_header">Главная</button></a>
+        <button class="bt_header" id="no">Доставка и оплата</button>
+        <a href="../onas/onas.html"><button class="bt_header">О нас</button></a>
+        <button class="bt_header" id="no">Контакты</button>
+        <button class="bt_header" id="no">FAQ</button>
+        <button class="bt_header" id="no"><img src="../img/Vector.png" alt="" id="img_search">поиск</button>
+    </div>
+    <div id="email_street">
+        <div>Kkazancov@gmail.com </div>
+        <p>Доставка 24/7</p>
+        <div id="email_street_blue_txt">ул.агибало*а 1*9</div>
+        <p>с 10:00 до 21:00</p>
+        <p id="no_holidays">без выходных</p>
+        <div class="corzina">
+            <img src="../img/corzina.png" alt="Ошибка изображения" id="corzina" title="Корзина">
+        </div>
+    </div>
+    <!-- иконки соц сети -->
+    <div id="img_icon_social">
+        <img src="../img/insta.png" alt="" onclick="OnInsta()">
+        <img src="../img/viber.png" alt="" onclick="OnViber()">
+        <img src="../img/whats.png" alt="" onclick="OnWhats()">
+    </div>
+    <img src="../img/image_flow1.png" alt="" id="main_im_flow">
+    <img src="../img/Ellipse 31.png" alt=""  id="main_im_elips_pink1">
+    <img src="../img/Ellipse 45.png" alt="" id="main_im_elips_pink2">
+
+    <img src="../img/image_flow2.png" alt="" id="main_im_flow2">
+    <img src="../img/Ellipse 44.png" alt="" id="main_im_flow3">
+    <img src="../img/Ellipse 52.png" alt="" id="main_im_flow4">
+</header>
+<body>
+    <div class="main_catal_txt">
+        <img src="../img/каталог.png" alt="">
+        <br>
+        <img src="../img/букетов.png" alt="" id="catal_txt">
+        <p>В нашем магазине самый большой выбор букетов для любых событий</p>
+    </div>
+    <!-- фильтр подборки -->
+    <div class="filter_podborki">
+        <h3>По свету</h3>
+        <img src="../img/Rectangle 66.png" id="rectang_filt"><li>нежные</li>
+        <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>яркие</li>
+
+        <h3>По цвету</h3>
+        <img src="../img/Rectangle 66.png" id="rectang_filt"><li>белый</li>
+        <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>жёлтый</li>
+        <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>зелёный</li>
+        <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>красный</li>
+        <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>оранжевый</li>
+        <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>розовый</li>
+        <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>синий</li>
+
+        <h3>По цвету</h3>
+        <img src="../img/Rectangle 66.png" id="rectang_filt"><li>по формату</li>
+        <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>букет</li>
+        <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>в вазе</li>
+        <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>в конверте</li>
+        <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>в корзине</li>
+        <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>в шляпной коробке</li>
+        <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>в ящике</li>
+
+        <!-- кнопка сбросить фильтр -->
+        <button>Сбросить фильтр</button>
+    </div>
+    <!-- БОЛЬШОЙ БЛОК КОНТЕНТА (ТОВАРЫ) -->
+    <div class="conten_block" id="conten_block_white">
+        <div class="bl_hov">
+            <img src="../img/image 114.png" alt="" id="coor_img_flow">
+                <div class="block_opis_btn_cont" data-sort="1">
+                    <p>лучший день</p>
+                    <span>700 р</span>
+                    <br>
+                    <button id="add_corzina">В корзину</button>
+                </div>    
+            </div>
+            <div class="bl_hov">
+                <img src="../img/image 130.png" alt="" id="coor_img_flow">
+                    <div class="block_opis_btn_cont">
+                        <p>лучший день</p>
+                        <span>900 р</span>
+                        <br>
+                        <button>В корзину</button>
+                    </div>    
+                </div>
+            <div class="bl_hov">
+                <img src="../img/image 131.png" alt="" id="coor_img_flow">
+                    <div class="block_opis_btn_cont">
+                        <p>лучший день</p>
+                        <span>1200 р</span>
+                        <br>
+                        <button>В корзину</button>
+                     </div>    
+                </div>    
+            <div class="bl_hov">
+                 <img src="../img/image 132.png" alt="" id="coor_img_flow">
+                    <div class="block_opis_btn_cont">
+                        <p>лучший день</p>
+                        <span>500 р</span>
+                        <br>
+                         <button>В корзину</button>
+                    </div>    
+                </div>     
+            <div class="bl_hov">
+                 <img src="../img/image 133.png" alt="" id="coor_img_flow">
+                    <div class="block_opis_btn_cont">
+                        <p>лучший день</p>
+                        <span>600 р</span>
+                        <br>
+                         <button>В корзину</button>
+                    </div>    
+                </div>
+        <div class="bl_hov">
+        <img src="../img/image 134.png" alt="" id="coor_img_flow">
+            <div class="block_opis_btn_cont">
+                <p>лучший день</p>
+                <span>1700 р</span>
+                <br>
+                <button>В корзину</button>
+            </div>    
+        </div>        
+        <div class="bl_hov">
+        <img src="../img/image 135.png" alt="" id="coor_img_flow">
+            <div class="block_opis_btn_cont">
+                <p>лучший день</p>
+                <span>2000 р</span>
+                <br>
+                <button>В корзину</button>
+            </div>    
+        </div>                
+        <div class="bl_hov">
+            <img src="../img/image 136.png" alt="" id="coor_img_flow">
+                <div class="block_opis_btn_cont">
+                    <p>лучший день</p>
+                    <span>1000 р</span>
+                    <br>
+                    <button>В корзину</button>
+                </div>    
+            </div>
+        <div class="bl_hov">
+        <img src="../img/image 137.png" alt="" id="coor_img_flow">
+            <div class="block_opis_btn_cont">
+                <p>лучший день</p>
+                <span>1200 р</span>
+                <br>
+                <button>В корзину</button>
+            </div>    
+        </div>
+        <div class="bl_hov">
+        <img src="../img/image 138.png" alt="" id="coor_img_flow">
+            <div class="block_opis_btn_cont">
+                <p>лучший день</p>
+                <span>700 р</span>
+                <br>
+                <button>В корзину</button>
+            </div>    
+        </div>                                                                                            
+    </div>
+    <!-- размытие корзины -->
+    <div id="bl_filter">
+        <div class="filt_bl"></div>
+    </div>
+
+
+    <!-- наверх -->
+    <div class="navverh">
+        <img src="../img/Arrow 9.png" alt="">
+    </div>
+    <div class="fon_btn_navert">
+        <img src="../img/Ellipse 52.png" alt="">
+    </div>
+
+
+
+
+
+    
+    <script src="../script/script.js"></script>
+    <script src="catalog_style/script/script.js"></script>
+</body>
+</html>
