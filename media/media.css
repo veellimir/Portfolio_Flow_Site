@@ -23,8 +23,19 @@
     }
     .el_pin_blu {
         top: -150px;
+    } 
+    .END {
+        position: relative;
+        top: -100px;
+        height: 700px;
+        margin-bottom: -100px;
+     }  
+}
+@media(max-width: 1603px) {
+    .main_block_foot {
+        padding-left: 10%;
+        width: 1300px;
     }
-
 }
 @media(max-width: 1558px) {
    .end_vopr {
@@ -41,6 +52,16 @@
    .bl_form {
     right: -100px;
    }
+   #el_en_big {
+    width: 300px;
+    height: 200px;
+   }
+   .END {
+    position: relative;
+    top: -700px;
+    height: 730px;
+    margin-bottom: -900px;
+ }
 }
 @media(max-width: 1556px) {
     #block_cat_txt {
@@ -68,6 +89,7 @@
         top: -800px;
     }
 }
+   
 @media(max-width: 1548px) {
     .all_bl_flow {
         height: 1280px;
@@ -105,6 +127,15 @@
      .el_pin_blu {
          top: -1000px;
      }
+     .END {
+        position: relative;
+        top: -1000px;
+        height:1200px;
+        margin-bottom: -1200px;
+     }
+     .main_block_foot {
+        margin-top: 200px;
+     }
 }
 @media(max-width: 1492px) {
     #item_wid_4 {
@@ -114,6 +145,12 @@
     }
     .end_vopr {
         top: -800px;
+    }
+}
+@media(max-width: 1469px) {
+    .main_block_foot {
+        width: 60%;
+        padding-left: 25%;
     }
 }
 @media(max-width: 1453px) {
@@ -141,6 +178,9 @@
     .bl_form {
         top: 0;
     }
+    .END {
+        top: -800px;
+    }
 }
 @media(max-width: 1345px) {
     .bl_pink_top {
@@ -164,6 +204,15 @@
     .el_pin_blu {
         top: -400px;
     }
+    .END {
+        position: relative;
+        top: -400px;
+        height: 1100px;
+        margin-bottom: -1200px;
+     }
+     .main_block_foot {
+        margin-top: 200px;
+     }
 
 }
 @media(max-width: 1312px) {
@@ -219,6 +268,7 @@
         width: 40%;
     }
 }
+
 @media(max-width: 1243px) {
     .im_bl_pov { 
         left: 50%;
@@ -235,6 +285,14 @@
         margin-left: 50px;
     }
 }
+@media(max-width: 1167px) {
+    .END {
+        position: relative;
+        top: -200px;
+        height: 1100px;
+        margin-bottom: -1200px;
+    }
+}
 @media(max-width: 1166px) {
 /* end */
     .img_foot_insta {
@@ -249,6 +307,12 @@
     .el_pin_blu {
         top: 20px;
     }
+    .END {
+        position: relative;
+        top: 100px;
+        height: 1100px;
+        margin-bottom: -1200px;
+     }
 }
 @media(max-width: 1165px) {
     .im_bl_pov {
@@ -304,8 +368,15 @@
     }
     #elipse_bl_pink {
         width: 40%;
-        
     }
+
+}
+@media(max-width: 1133px) {
+    .main_block_foot {
+        padding-left: 15%;
+        width: 80%;
+    }
+
 }
 @media(max-width: 1029px) {
     .poblock_gotov_buketi {
@@ -345,6 +416,38 @@
     #lin_pin {
         margin-top: 120px;
         left: 0;
+    }
+}
+@media(max-width: 965px) {
+    .main_block_foot {
+        padding-left: 20%;
+        width: 60%;
+    }
+    #rekvisit {
+        margin-top: -200px;
+    }
+    #cat_end_fot {
+        margin-top: -100px;
+    }
+    #buk_end_fot {
+        margin-top: -100px;
+    }
+    #email_bl_end_foot {
+        margin-top: -225px;
+    }
+}
+@media(max-width: 948px) {
+
+}
+@media(max-width: 947px) {
+    #cat_end_fot {
+        margin-left: 400px;
+    }
+    #bl_blu_en_foot {
+        margin-left: 400px;
+    }
+    footer {
+        width: 975px;
     }
 }
 @media(max-width: 930px) {

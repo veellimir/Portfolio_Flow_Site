@@ -837,7 +837,6 @@ input {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    -moz-appearance: textfield;
     margin: 0;
 }
 #inp_comment {
@@ -943,20 +942,90 @@ footer {
 }
 .END {
     width: 100%;
-    height: 230px;
+    height: 737px;
     background-color: #000000;
     position: absolute;
-  
+    display: inline-block;
 }
-.ic_soc_end {
+/* .ic_soc_end {
     display: inline;
     position: relative;
     left: 45%;
     top: 90px;
     transform: translate(-50%, 0);
+} */
+/* .ic_soc_end img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+} */
+.main_block_foot {
+    display: inline-block;
+    width: 80%;
+    height: 400px;
+    position: relative;
+    top: 50px;
+    padding-bottom: -400px;
+    padding-left: 15%;
 }
-.ic_soc_end img {
-    width: 40px;
-    height: 40px;
-    padding-left: 20px;
+.main_block_foot div {
+    display: inline-block;
+    color: white;
+    vertical-align: top;
+    margin-top: 20px;
+    padding-left:50px;
+    width: 200px;
+}
+.main_block_foot h3 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #43FFD2;
+}
+.main_block_foot p {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 5px;
+}
+#rekvisit {
+    margin-top: 20px;
+}
+#bl_blu_en_foot h3 {
+    margin-bottom: 20px;
+}
+#email_bl_end_foot h3 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #43FFD2;
+}
+#email_bl_end_foot p {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+#email_bl_end_foot img {
+    padding-top: 15px;
+    cursor: pointer;
 }
