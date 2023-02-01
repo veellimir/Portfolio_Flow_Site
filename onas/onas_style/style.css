@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* выпадающее меню корзины */
+#dropdown_box {
+    background-color: #040A0A;
+    width: 430px;
+    height: 1000px;
+    z-index: 1;
+}
+#dropdown_box >h3 {
+    color: #43FFD2;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+#close_corzina {
+    padding-left: 120px;
+    cursor: pointer;
+}
+#line_corz {
+    margin-left: 30px;
+}
+#neon_pink_elips {
+    background-color: #7D2253;
+    filter: blur(125px);
+    transform: rotate(32.83deg);
+    width: 504px;
+    height: 360px;
+    position: absolute;
+    left: 350px;
+    top: 325px;  
+}
+/* невыд блок */
+.hidden_menu_corz {
+    position: fixed;
+    top: 0;
+    right: -500px;
+}
+/* видимый блок */
+.visib_menu_corz {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+/* конец выпадающего меню корзины */
+/* начало шапки */
+.header_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    background-color: black;
+}
+#no {
+    color: rgb(167, 166, 166);
+}
+/* иконка лого */
+#img_logo {
+    margin-right: 70px;
+}
+/* иконка поиск */
+#img_search {
+  padding-right: 10px;
+}
+/* кнопки */
+.bt_header {
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 124px;
+    height: 21px;
+    font-size: 14px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 1;
+    text-decoration: none;
+}
+/* фоны  */
+#flow_yellow {
+    position: absolute;
+    top: 0;
+    right: 0; 
+}
+#elip_yellw_1 {
+    position: absolute;
+    top: -150px;
+    left: -390px;
+    z-index: -1;
+}
+#elip_yellw_2 {
+    position: absolute;
+    right: 225px;
+    top: 400px;
+    width: 293.56px;
+    height: 235.26px;
+    background: #C8A156;
+    filter: blur(125px);
+    transform: rotate(-71.86deg);
+}
+
+body {
+    width: 100%;
+    height: 1200px;
+    background-color: #040A0A;
+}
