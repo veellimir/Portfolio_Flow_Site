@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../foonts/oswald.css">
     <link rel="stylesheet" href="media/media.css">
 </head>
-<header>
+<header class="header_active">
      <!-- выпадающее меню корзины -->
      <div class="hidden_menu_corz" id="dropdown_box">
         <div class="back_petite_corz">
@@ -18,6 +18,7 @@
         <h3>Ваша корзина</h3><img src="../img/close.png" alt="" id="close_corzina">
         <img src="../img/Line 220.png" alt="" id="line_corz">
         <img src="../img/Ellipse 59.png" alt="" id="neon_pink_elips">
+        <div id="title"></div>
 
         
     </div>
@@ -43,9 +44,9 @@
     </div>
     <!-- иконки соц сети -->
     <div id="img_icon_social">
-        <img src="../img/insta.png" alt="" onclick="OnInsta()">
-        <img src="../img/viber.png" alt="" onclick="OnViber()">
-        <img src="../img/whats.png" alt="" onclick="OnWhats()">
+        <img src="../img/insta.png" alt="" onclick="OnInsta()" id="inst">
+        <img src="../img/viber.png" alt="" onclick="OnViber()" id="vib">
+        <img src="../img/whats.png" alt="" onclick="OnWhats()" id="what">
     </div>
     <img src="../img/image_flow1.png" alt="" id="main_im_flow">
     <img src="../img/Ellipse 31.png" alt=""  id="main_im_elips_pink1">
@@ -97,7 +98,7 @@
                     <p>лучший день</p>
                     <span>700 р</span>
                     <br>
-                    <button id="add_corzina">В корзину</button>
+                    <button onclick="addToBacket(item)" id="add_corzina">В корзину</button>
                 </div>    
             </div>
             <div class="bl_hov">
@@ -180,7 +181,7 @@
                 <br>
                 <button>В корзину</button>
             </div>    
-        </div>                                                                                            
+        </div>                                                                                          
     </div>
     <!-- размытие корзины -->
     <div id="bl_filter">
@@ -202,6 +203,6 @@
 
     
     <script src="../script/script.js"></script>
-    <script src="catalog_style/script/script.js"></script>
+    <script src="catalog_style/script/item.js"></script>
 </body>
 </html>

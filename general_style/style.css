@@ -6,7 +6,7 @@
 .filt_bl {
     position: fixed;
     top: 0;
-    left: -2000px;
+    left: -2000%;
     background-color: rgb(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     width: 100%;
@@ -14,12 +14,13 @@
 }
 .filt_bl_on {
     left: 0;
+    z-index: 5;
 }
 #dropdown_box {
     background-color: #040A0A;
     width: 430px;
     height: 1000px;
-    z-index: 1;
+    z-index: 6;
 }
 #dropdown_box >h3 {
     color: #43FFD2;
@@ -73,6 +74,26 @@
     width: 50%;
     height: 60px;
     position: absolute;
+    transition: all .2s ease;
+    animation-name: anim-header;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: 4;
+}
+.header_btn.active{
+    background-color: #1c1d1d;
+    position: fixed;
+    height: 60px;
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+@keyframes anim-header {
+    0% {
+        transform: translate(-500%);
+        background-color: #43FFD2;
+        filter: blur(90px);
+    }
 }
 #no {
     color: rgb(167, 166, 166);
@@ -108,6 +129,15 @@
     width: 170px;
     height: 150px;
     text-align: right;
+    animation-name: anim-email;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes anim-email {
+    0% {
+        transform: transition(200px);
+        filter: blur(100px);
+    }
 }
 #email_street >div {
     color: #43FFD2;
@@ -148,9 +178,43 @@
     width: 24.98px;
     height: 24.98px;
     margin-top: 8px;
+    transition: all .2s ease;
 }
 #img_icon_social > img:hover{
     transform: scale(0.8);
+}
+#inst {
+    animation-name: anim-insta;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes anim-insta {
+    0% {
+        transform: translate3d(-100%);
+        filter: blur(50px);
+    }
+}
+#vib {
+    animation-name: anim-insta;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes anim-insta {
+    0% {
+        transform: translate3d(-200%);
+        filter: blur(50px);
+    }
+}
+#what {
+    animation-name: anim-insta;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes anim-insta {
+    0% {
+        transform: translate3d(-300%);
+        filter: blur(50px);
+    }
 }
 .corzina {
     margin-top: 500px;
@@ -205,6 +269,18 @@
     text-transform: uppercase;
     letter-spacing: 0.2em;
     text-align: center;
+    animation-name: anim-name_site;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes anim-name_site {
+    0% {
+        transform: translate(-400%);
+        filter: blur(20px);
+    }
+    50% {
+        transform: translate(10%);
+    }
 }
 #block_lower-flower_txt >p {
     text-align: center;
@@ -214,6 +290,22 @@
     font-size: 23px;
     margin-top: 20px;
     letter-spacing: 0.04em;
+}
+#create_for {
+    animation-name: create_for;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition: all .4s ease;
+}
+@keyframes create_for {
+    0% {
+        transform: translate3d(-200%);
+        
+        filter: blur(12px);
+    }
+    50% {
+        transform: translate3d(-50%);
+    }
 }
 /* кнопка смотреть каталог */
 #btn_smotret_catalog {
@@ -232,6 +324,17 @@
     transform: translate(-50%, 0);
     top: 100px;
     cursor: pointer;
+    animation-name: btn-catal;
+    transform: translate3d(-900%);
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: all .2s ease;
+}
+@keyframes btn-catal {
+    0% {
+        transform: translate3d(30%); 
+        filter: blur(125px);
+    }
 }
 /* общий параметр блока и фона  */
 body {

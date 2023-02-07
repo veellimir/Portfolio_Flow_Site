@@ -54,6 +54,7 @@
     top: 0;
     right: 0;
 }
+
 /* начало шапки */
 .header_btn {
     display: flex;
@@ -62,7 +63,26 @@
     margin-left: 10%;
     width: 50%;
     height: 60px;
-    position: absolute;
+    transition: all .2s ease;
+    animation-name: anim-header;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: 4;
+}
+.header_btn.active{
+    background-color: #1c1d1d;
+    position: fixed;
+    height: 60px;
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+@keyframes anim-header {
+    0% {
+        transform: translate3d(-100%);
+        background-color: #7D2253;
+        filter: blur(70px);
+    }
 }
 /* иконка лого */
 #img_logo {
@@ -106,6 +126,15 @@
     width: 170px;
     height: 150px;
     text-align: right;
+    animation-name: anim-email;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes anim-email {
+    0% {
+        transform: transition(200px);
+        filter: blur(100px);
+    }
 }
 #email_street >div {
     color: #43FFD2;
@@ -151,6 +180,39 @@
 #img_icon_social > img:hover{
     transform: scale(0.8);
 }
+#inst {
+    animation-name: anim-insta;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes anim-insta {
+    0% {
+        transform: translate3d(-100%);
+        filter: blur(50px);
+    }
+}
+#vib {
+    animation-name: anim-insta;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes anim-insta {
+    0% {
+        transform: translate3d(-200%);
+        filter: blur(50px);
+    }
+}
+#what {
+    animation-name: anim-insta;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes anim-insta {
+    0% {
+        transform: translate3d(-300%);
+        filter: blur(50px);
+    }
+}
 .corzina {
     margin-top: 500px;
     margin-left: 110px;
@@ -165,22 +227,6 @@
     cursor: pointer;
 }
 .corzina:hover {
-    transform: scale(0.8);
-}
-.corzina {
-    margin-top: 500px;
-    margin-left: 110px;
-    background-color: rgba(0, 0, 0, 0.2);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    width: 65px;
-    height: 65px;
-    cursor: pointer;
-}
-#corzina:hover {
     transform: scale(0.8);
 }
 /* аним выпадание */
@@ -267,6 +313,19 @@ body {
     margin-top: 50px;
     margin-left: 280px;
 }
+.main_catal_txt img {
+    animation-name: anim-catalog;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes anim-catalog {
+    0% {
+        transform: translateX(1200%);
+    }
+    60% {
+        transform: translateX(-20%);
+    }
+}
 .main_catal_txt >p {
     color: white;
     font-size: 14px;
@@ -278,6 +337,19 @@ body {
     text-transform: uppercase;
     margin-left: 40%;
     margin-top: 30px;
+    animation-name: anim-the_magazine;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes anim-the_magazine {
+    0% {
+        transform: translate(122px);
+        filter: blur(12px);
+        color: #7D2253;
+    }
+    50% {
+        color: #883762;
+    }
 }
 /* фильтр подборки */
 .filter_podborki {
@@ -359,9 +431,19 @@ body {
     cursor: pointer;
     margin-top: -50px;
 }
+.conten_block {
+    animation-name: anim-block_item;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
 .bl_hov:hover {
     transform: scale(1.05);
     transition: all 1s ease;
+}
+@keyframes anim-block_item {
+    0% {
+        transform: translateY(-300%);
+    }
 }
 .conten_block >img {
     width: 255px;
@@ -436,4 +518,9 @@ body {
     z-index: -1;
     margin-top: 300px;
     margin-left: 5%; 
+}
+.cartImg {
+    width: 50px;
+    height: 50px;
+    background-color: #34c0c0;
 }

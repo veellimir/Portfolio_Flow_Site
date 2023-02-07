@@ -41,6 +41,9 @@
     .conten_block {
         left: 30%;
     }
+    #img_logo {
+        margin-right: -20px;
+    }
 }
 
 @media(max-width: 1029px) {
@@ -86,4 +89,13 @@
         width: 600px;
         height: auto;
     }
+}
+@media(max-width: 929px) {
+    .header_btn.active {
+       position: relative;
+    }
+    #img_logo {
+        opacity: 0;
+    }
+    
 }

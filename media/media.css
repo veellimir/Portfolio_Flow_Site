@@ -213,6 +213,7 @@
      .main_block_foot {
         margin-top: 200px;
      }
+     
 
 }
 @media(max-width: 1312px) {
@@ -514,9 +515,11 @@
     }
     .header_btn {
         margin-left: 60px;
-        
     }
     #block_lower-flower_txt {
         left: 150px;
+    }
+    .header_btn.active  {
+        position: relative;
     }
 }

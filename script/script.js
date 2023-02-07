@@ -32,30 +32,23 @@ but_close_corz.addEventListener("click", function() {
     }
 
 })
-let bl_hov = document.getElementByClassName('bl_hov'),
-    but_add = document.getElementById('add_corzina'),
-    field = document.createElement('div');
+// замена шапки при скроле
+let header = document.querySelector('.header_btn'),
+    headerH = document.querySelector('.header_btn').clientHeight;
+    console.log(headerH)
 
-    for (let i = 0; i < but_add.length; i++) {
-        but_add[i].addEventListener('click', function () {
-            let clone = bl_hov[i].cloneNode(true),
-                btn = clone.querySelector('button');
-            btn.remove();
-            field.appendChild(clone);
-            
-        });
+    document.onscroll = function () {
+        let scroll = window.scrollY;
+        console.log(scroll)
+
+        if (scroll > headerH) {
+            header.classList.add('active')
+            // document.body.style.paddingTop = headerH + 'px';
+        } else {
+            header.classList.remove('active')
+            // document.body.removeAttribute = (style)
+        }
     }
-
-
-
-
-
-
-
-
-
-
-
 
 // функц кнопки смотреть каталог
 function OnColor() {
