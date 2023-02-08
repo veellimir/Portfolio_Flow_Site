@@ -11,6 +11,7 @@
     width: 430px;
     height: 1000px;
     z-index: 1;
+    transition: all 0.4s ease;
 }
 #dropdown_box >h3 {
     color: #43FFD2;
@@ -230,9 +231,7 @@
     transform: scale(0.8);
 }
 /* аним выпадание */
-#dropdown_box {
-    transition: all 0.4s ease;
-}
+
 .back_petite_corz {
     width: 65px;
     height: 65px;

@@ -2,12 +2,27 @@
     margin: 0;
     padding: 0;
 }
+.filt_bl {
+    position: fixed;
+    top: 0;
+    left: -2000px;
+    background-color: rgb(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+}
+.filt_bl_on {
+    left: 0;
+    z-index: 5;
+}
 /* выпадающее меню корзины */
 #dropdown_box {
     background-color: #040A0A;
     width: 430px;
     height: 1000px;
     z-index: 1;
+    z-index: 10;
+    transition: all 0.4s ease;
 }
 #dropdown_box >h3 {
     color: #43FFD2;
@@ -30,7 +45,7 @@
     margin-left: 30px;
 }
 #neon_pink_elips {
-    background-color: #7D2253;
+    background-color: #C8A156;
     filter: blur(125px);
     transform: rotate(32.83deg);
     width: 504px;
@@ -50,17 +65,65 @@
     position: fixed;
     top: 0;
     right: 0;
+    
+}
+.corzina {
+    margin-top: 500px;
+    margin-left: 110px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+}
+.corzina:hover {
+    transform: scale(0.8);
+}
+.back_petite_corz {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: -75px;
+    top: 30px;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#corzina {
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
 /* конец выпадающего меню корзины */
 /* начало шапки */
 .header_btn {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    padding-left: 15%;
     width: 100%;
-    height: 70px;
-    position: absolute;
+    height: 60px;
+    transition: all .2s ease;
+    animation-name: anim-header;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: 4;
     background-color: black;
+    position: fixed;
+}
+@keyframes anim-header {
+    0% {
+        transform: translate3d(-100%);
+        background-color: #C8A156;
+        filter: blur(70px);
+    }
 }
 #no {
     color: rgb(167, 166, 166);
@@ -72,6 +135,21 @@
 /* иконка поиск */
 #img_search {
   padding-right: 10px;
+}
+#img_vect_call {
+    position: relative;
+    right: 0%;
+    margin-left: 5%;
+}
+#number {
+    margin-left: 10px;
+    color: #43FFD2;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 /* кнопки */
 .bt_header {
@@ -89,11 +167,44 @@
     z-index: 1;
     text-decoration: none;
 }
+
+
+body {
+    width: 100%;
+    height: 1200px;
+    background-color: #040A0A;
+}
 /* фоны  */
 #flow_yellow {
     position: absolute;
     top: 0;
     right: 0; 
+    z-index: -1;
+    animation-name: elip-yellow;
+    transition: all .1s ease;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+#flow_yellow_2 {
+    animation-name: elip-yellow2;
+    transition: all .1s ease;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+@keyframes elip-yellow {
+    0% {
+        transform: translate3d(-100%);
+        color: #C8A156;
+        filter: blur(220px);
+        border-radius: 30px;
+    }
+}
+@keyframes elip-yellow2 {
+    0% {
+        transform: translate3d(-50%);
+        color: #C8A156;
+        filter: blur(220px);
+    }
 }
 #elip_yellw_1 {
     position: absolute;
@@ -110,10 +221,213 @@
     background: #C8A156;
     filter: blur(125px);
     transform: rotate(-71.86deg);
+    z-index: -2;
 }
-
-body {
-    width: 100%;
-    height: 1200px;
-    background-color: #040A0A;
+/* контент */
+.about_Us {
+    position: absolute;
+    top: 180px;
+    left: 13%;
+}
+@import url('https://fonts.cdnfonts.com/css/cormorant-2');
+.about_Us h1 {
+    width: 320px;
+    height: 121px;
+    color: #ffff;
+    font-size: 100px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: 'Cormorant';
+    line-height: 121px;
+    letter-spacing: 0.02em;
+    margin-bottom: 110px;
+}
+.about_Us p {
+    width: 242px;
+    height: 128px;
+    color: #43FFD2;
+    font-family: 'Cormorant';
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 64px;
+    letter-spacing: 0.02em;
+    display: inline;
+    margin-left: 0px;
+    text-align: center;
+}
+#line_about {
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+.about_txt {
+    margin-left: 100px;
+}
+.about_list_one {
+    width: 847px;
+    height: 282px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 545px;
+    right: 0;
+    animation-name: about_list_one;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: all .2s ease;
+}
+@keyframes about_list_one {
+    0% {
+        transform: translate(-200%);
+        filter: blur(100px);
+        background-color: #43FFD2;
+    }
+}
+.about_list_one h1 {
+    color: #ffff;
+    width: 555px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin: 30px;
+}
+.about_list_one p {
+    color: #ffff;
+    width: 662px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    margin: 30px;
+}
+.about_list_one img {
+    position: absolute;
+    top: -150px;
+    right: 400px;
+    z-index: -1;
+    filter: blur(12px);
+}
+/* блок гарантии */
+.about_list_two {
+    position: absolute;
+    left: 19%;
+    margin-top: 60px;
+    animation-name: about_list_two;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: all .2s ease;
+}
+@keyframes about_list_two {
+    0% {
+        transform: translate(2200px);
+        filter: blur(125px);
+        background-color: #d1a24b;
+    }
+}
+.about_list_two h1 {
+    width: 242px;
+    height: 128px;
+    color: #43FFD2;
+    font-family: 'Cormorant';
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 64px;
+    letter-spacing: 0.02em;
+    display: inline;
+    margin-left: 0px;
+    text-align: center;
+}
+.about_list_two p {
+    color: #ffff;
+    width: 555px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    width: 825px;
+}
+.about_list_three {
+    position: absolute;
+    top: 1100px;
+    left: 19%;
+}
+.about_list_three h1 {
+    width: 695px;
+    height: 192px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 64px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #43FFD2;
+}
+.about_list_three ul {
+    margin-left: 300px;
+    margin-top: 30px;
+}
+.about_list_three li {
+    color: #ffff;
+    font-family: 'Oswald';
+    font-style: normal;
+    letter-spacing: 0.04em;
+    line-height: 34px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.color_harmony {
+    position: relative;
+    top: 850px;
+    left: 10%;
+    width: 1066px;
+    height: 384px;
+}
+.color_harmony h1 {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 60px;
+    line-height: 64px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.color_harmony p {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 50px;
+    margin-left: 200px;
+}
+#elip_yellw_end_one {
+    margin-top: 500px;
+    position: absolute;
+    left: 0;
+}
+.img_flow {
+    position: absolute;
+    margin-top: -150px;
+    right: 0;
+    z-index: -1;
 }

@@ -135,7 +135,7 @@
 }
 @keyframes anim-email {
     0% {
-        transform: transition(200px);
+        transform: translate(2500%);
         filter: blur(100px);
     }
 }
