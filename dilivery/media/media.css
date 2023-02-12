@@ -1,0 +1,49 @@
+@media(max-width: 1309px) {
+    .header_btn {
+        padding-left: 3%;
+    }
+}
+@media(max-width: 1263px) {
+    .color_harmony {
+        width: 800px;
+        height: 320px;
+        font-size: 40px;
+    }
+    .color_harmony h1 {
+        font-size: 40px;
+    }
+}
+@media(max-width: 1137px) {
+    #number {
+        opacity: 0;
+    }
+    #corzina {
+        margin-left: -100px;
+    }
+    .about_list_three ul {
+        margin-left: 100px;
+    }
+}
+@media(max-width: 1015px) {
+    .header_btn button {
+        margin-left: -30px;
+    }
+    #number {
+        opacity: 0;
+    }
+    #corzina {
+        margin-left: -60px;
+    }
+    #dileviry {
+        margin-left: -0;
+    }
+    #bt_header_coordinats {
+        margin-left: -0;
+    }
+}
+@media(max-width: 928px) {
+    .header_btn {
+        position: relative;
+        width: 924px;
+    }
+}

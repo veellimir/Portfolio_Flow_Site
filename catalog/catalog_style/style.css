@@ -418,6 +418,103 @@ body {
     margin-top: 40px;
     margin-left: 15px;
 }
+/* описание товара при клики на товар */
+#page_item {
+    width: 900px;
+    height: 700px;
+    z-index: 2;
+    border-radius: 22px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(125px);
+    animation-name: anim_close_bl;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transform: translate3d(600%);  
+}
+.active_page_item {
+    position: fixed;
+    right: 0px;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.no_active_page_item {
+    position: fixed;
+    right: -4440px;
+}
+@keyframes anim_close_bl {
+    0%{
+        transform: translate3d(-50%);
+        animation-duration: 4.7s;
+    }
+    100%{
+        transform: translate3d(0);
+        animation-duration: 4.7s;
+    }
+}
+.clouse_block_descript {
+    float: right;
+    margin-right: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    width: 25px;
+}
+/* товар в карточке */
+.cart-add_block {
+    margin-left: 10%;
+    margin-top: 80px;
+}
+.img_cart-add_block {
+    width: 400px;
+}
+/* #cart-add_block_txt {
+    display: inline;
+    margin-left: 40px;
+  
+    top: -23px;
+    float: right;
+} */
+.cart-add_block p {
+    display: table;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #43FFD2;
+    position: absolute;
+    right: 170px;
+    top: 80px;    
+}
+.cart-add_block span {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    float: right;
+    position: absolute;
+    top: 140px;
+    right: 290px;
+}
+.cart-add_block button {
+    width: 255px;
+    height: 50px;
+    background-color: #43FFD2;
+    border: 1px solid #1c1d1d;
+    cursor: pointer;
+    float: right;
+    margin-right: 180px;
+    position: absolute;
+    top: 190px;
+    left: 550px;
+}
+
 /* БЛОК ДЛЯ СМЕНЫ КОНТЕНТА */
 .conten_block {
     width: 60%;

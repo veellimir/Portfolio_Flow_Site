@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header_btn {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 15%;
+    width: 100%;
+    height: 60px;
+    transition: all .2s ease;
+    animation-name: anim-header;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: 4;
+    background-color: black;
+    position: fixed;
+}
+@keyframes anim-header {
+    0% {
+        transform: translate3d(-100%);
+        background-color: #C8A156;
+        filter: blur(70px);
+    }
+}
+#no {
+    color: rgb(167, 166, 166);
+}
+/* иконка лого */
+#img_logo {
+    margin-right: 70px;
+}
+/* иконка поиск */
+#img_search {
+  padding-right: 10px;
+}
+#img_vect_call {
+    position: relative;
+    right: 0%;
+    margin-left: 5%;
+}
+#corzina {
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+#number {
+    margin-left: 10px;
+    color: #43FFD2;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+/* кнопки */
+.bt_header {
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 124px;
+    height: 21px;
+    font-size: 14px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 1;
+    text-decoration: none;
+}
+body {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #1c1d1d;
+}
