@@ -79,3 +79,4 @@ function OnWhats() {
     openwhat = window.open("https://www.whatsapp.com/?lang=ru")
 }
 
+ 

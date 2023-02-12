@@ -90,96 +90,110 @@
         <!-- кнопка сбросить фильтр -->
         <button>Сбросить фильтр</button>
     </div>
+    <!-- описание товара при клики на товар -->
+    <div id="page_item" class="no_active_page_item">
+        <img src="../img/close.png" class="clouse_block_descript" data-exit>
+        <!-- /* товар в карточке */ -->
+        <div class="cart-add_block">
+            <!-- <div id="cart-add_block_txt">
+                <img src="../img/image 130.png" class="img_cart-add_block">
+                <p data-name>лучший день</p>
+                <span>цена : 700 р</span>
+                <br>
+                <button id="add_corzina">В корзину</button>
+            </div> -->
+        </div> 
+    </div>
     <!-- БОЛЬШОЙ БЛОК КОНТЕНТА (ТОВАРЫ) -->
     <div class="conten_block" id="conten_block_white">
-        <div class="bl_hov">
-            <img src="../img/image 114.png" alt="" id="coor_img_flow">
+        <div class="bl_hov" data-id="01">
+            <img src="../img/image 114.png" alt="" id="coor_img_flow" data-card>
                 <div class="block_opis_btn_cont" data-sort="1">
-                    <p>лучший день</p>
-                    <span>700 р</span>
+                    <p data-name>лучший день</p>
+                    <span class="price__currency">700 р</span>
                     <br>
-                    <button onclick="addToBacket(item)" id="add_corzina">В корзину</button>
+                    <button class="in_backet" data-butt>В корзину</button>
                 </div>    
             </div>
-            <div class="bl_hov">
-                <img src="../img/image 130.png" alt="" id="coor_img_flow">
+            <div class="bl_hov" data-id="02">
+                <img src="../img/image 130.png" alt="" id="coor_img_flow" data-card>
                     <div class="block_opis_btn_cont">
-                        <p>лучший день</p>
-                        <span>900 р</span>
+                        <p data-name>лучший день</p>
+                        <span class="price__currency">900 р</span>
                         <br>
-                        <button>В корзину</button>
+                        <button class="in_backet">В корзину</button>
                     </div>    
                 </div>
-            <div class="bl_hov">
-                <img src="../img/image 131.png" alt="" id="coor_img_flow">
+            <div class="bl_hov" data-id="03">
+                <img src="../img/image 131.png" alt="" id="coor_img_flow" data-card>
                     <div class="block_opis_btn_cont">
-                        <p>лучший день</p>
-                        <span>1200 р</span>
+                        <p data-name>лучший день</p>
+                        <span class="price__currency">1200 р</span>
                         <br>
-                        <button>В корзину</button>
+                        <button class="in_backet">В корзину</button>
                      </div>    
                 </div>    
-            <div class="bl_hov">
-                 <img src="../img/image 132.png" alt="" id="coor_img_flow">
+            <div class="bl_hov" data-id="04">
+                 <img src="../img/image 132.png" alt="" id="coor_img_flow" data-card>
                     <div class="block_opis_btn_cont">
-                        <p>лучший день</p>
-                        <span>500 р</span>
+                        <p data-name>лучший день</p>
+                        <span class="price__currency">500 р</span>
                         <br>
-                         <button>В корзину</button>
+                        <button class="in_backet">В корзину</button>
                     </div>    
                 </div>     
-            <div class="bl_hov">
-                 <img src="../img/image 133.png" alt="" id="coor_img_flow">
+            <div class="bl_hov" data-id="05">
+                 <img src="../img/image 133.png" alt="" id="coor_img_flow" data-card>
                     <div class="block_opis_btn_cont">
-                        <p>лучший день</p>
-                        <span>600 р</span>
+                        <p data-name>лучший день</p>
+                        <span class="price__currency">600 р</span>
                         <br>
-                         <button>В корзину</button>
+                         <button class="in_backet">В корзину</button>
                     </div>    
                 </div>
-        <div class="bl_hov">
-        <img src="../img/image 134.png" alt="" id="coor_img_flow">
+        <div class="bl_hov" data-id="06">
+        <img src="../img/image 134.png" alt="" id="coor_img_flow" data-card>
             <div class="block_opis_btn_cont">
-                <p>лучший день</p>
-                <span>1700 р</span>
+                <p data-name>лучший день</p>
+                <span class="price__currency">1700 р</span>
                 <br>
-                <button>В корзину</button>
+                <button class="in_backet">В корзину</button>
             </div>    
         </div>        
-        <div class="bl_hov">
-        <img src="../img/image 135.png" alt="" id="coor_img_flow">
+        <div class="bl_hov" data-id="07">
+        <img src="../img/image 135.png" alt="" id="coor_img_flow" data-card>
             <div class="block_opis_btn_cont">
-                <p>лучший день</p>
-                <span>2000 р</span>
+                <p data-name>лучший день</p>
+                <span class="price__currency">2000 р</span>
                 <br>
-                <button>В корзину</button>
+                <button class="in_backet">В корзину</button>
             </div>    
         </div>                
-        <div class="bl_hov">
-            <img src="../img/image 136.png" alt="" id="coor_img_flow">
+        <div class="bl_hov" data-id="08">
+            <img src="../img/image 136.png" alt="" id="coor_img_flow" data-card>
                 <div class="block_opis_btn_cont">
-                    <p>лучший день</p>
-                    <span>1000 р</span>
+                    <p data-name>лучший день</p>
+                    <span class="price__currency">1000 р</span>
                     <br>
-                    <button>В корзину</button>
+                    <button class="in_backet">В корзину</button>
                 </div>    
             </div>
-        <div class="bl_hov">
-        <img src="../img/image 137.png" alt="" id="coor_img_flow">
+        <div class="bl_hov" data-id="09">
+        <img src="../img/image 137.png" alt="" id="coor_img_flow" data-card>
             <div class="block_opis_btn_cont">
-                <p>лучший день</p>
-                <span>1200 р</span>
+                <p data-name>лучший день</p>
+                <span class="price__currency">1200 р</span>
                 <br>
-                <button>В корзину</button>
+                <button class="in_backet">В корзину</button>
             </div>    
         </div>
-        <div class="bl_hov">
-        <img src="../img/image 138.png" alt="" id="coor_img_flow">
+        <div class="bl_hov" data-id="10">
+        <img src="../img/image 138.png" alt="" id="coor_img_flow" data-card data-set="dataset">
             <div class="block_opis_btn_cont">
-                <p>лучший день</p>
-                <span>700 р</span>
+                <p data-name>лучший день</p>
+                <span class="price__currency">700 р</span>
                 <br>
-                <button>В корзину</button>
+                <button class="in_backet">В корзину</button>
             </div>    
         </div>                                                                                          
     </div>
@@ -196,7 +210,6 @@
     <div class="fon_btn_navert">
         <img src="../img/Ellipse 52.png" alt="">
     </div>
-
 
 
 
