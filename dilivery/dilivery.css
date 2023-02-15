@@ -20,8 +20,8 @@
 @keyframes anim-header {
     0% {
         transform: translate3d(-100%);
-        background-color: #C8A156;
-        filter: blur(70px);
+        background-color: #6B535F;
+        filter: blur(30px);
     }
 }
 #no {
@@ -76,4 +76,169 @@ body {
     box-sizing: border-box;
     width: 100%;
     background-color: #1c1d1d;
+}
+#fon_elip_gray {
+    background-color: #6B535F;
+    filter: blur(125px);
+    width: 274px;
+    height: 220px;
+}
+#fon_elip_gray_right {
+    position: absolute;
+    right: 0;
+    background-color: #6B535F;
+    filter: blur(125px);
+    width: 504px;
+    height: 620px;
+}
+#fon_elip_gray_right_flover {
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+.dilev_and_pyment {
+    position: absolute;
+    left: 20%;
+    transform: translate(-20%)
+}
+@import url('https://fonts.cdnfonts.com/css/cormorant-2');
+.dilev_and_pyment h1 {
+    font-family: 'Cormorant';
+    font-weight: 100;
+    font-size: 100px;
+    line-height: 121px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+}
+#payment {
+    margin-left: 95px;
+    white-space: nowrap;
+}
+.dilev_and_pyment h3 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D978AC;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.dilev_and_pyment p {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 20px;
+    white-space: nowrap;
+    margin-left: 100px;
+}
+.dilev_and_pyment span {
+    color: #43FFD2;
+}
+#mark_excl {
+    position: relative;
+    top: -100px;
+    left: 60px;
+}
+.dilev_and_pyment h4 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D978AC;
+    
+}
+.foon_elipse {
+    position: absolute;
+    top: 450px;
+    display: inline-block;
+    left: 20%;
+}
+.block_info {
+    width: 80%;
+    height: 300px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 500px; 
+}
+#block_info_one {
+    width: 255px;
+    height: 211px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+#block_info_one p {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+    margin-top: 30px; 
+}
+#block_info_one img {
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%);
+}
+#marg_p_info {
+    padding-top: 30px;
+}
+.price_dliv_block {
+    position: absolute;
+    top: 1100px;
+    width: 40%;
+    height: 200px;
+    background-color: #43FFD2;
+}
+.price_dliv_block h1 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #D978AC;
+}
+.price_dliv_block li {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+.price_dliv_block span {
+    color: gray;
+    font-weight: 300;
+   
+}
+.price_dliv_block p {
+    color: #43FFD2;
+    white-space: nowrap;
 }

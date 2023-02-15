@@ -1,3 +1,9 @@
+@media(max-width: 1412px) {
+    .block_info {
+        height: 500px;
+        width: 50%;
+    }
+}
 @media(max-width: 1309px) {
     .header_btn {
         padding-left: 3%;
@@ -13,6 +19,19 @@
         font-size: 40px;
     }
 }
+@media(max-width: 1192px) {
+    .dilev_and_pyment {
+        left: 150px;
+    }
+    .dilev_and_pyment h1 {
+        font-size: 70px;
+    }
+    .block_info {
+        left: 50%;
+        width: 600px;
+    }
+    
+}
 @media(max-width: 1137px) {
     #number {
         opacity: 0;
@@ -24,6 +43,7 @@
         margin-left: 100px;
     }
 }
+
 @media(max-width: 1015px) {
     .header_btn button {
         margin-left: -30px;
@@ -45,5 +65,19 @@
     .header_btn {
         position: relative;
         width: 924px;
+    }
+    #fon_elip_gray_right {
+        width: 304px;
+        height: 420px;
+        left: 500px;
+    }
+    #fon_elip_gray_right_flover {
+        width: 404px;
+        height: 480px;
+        left: 540px;
+    }
+    .block_info {
+        left: 450px;
+        background-color: #43FFD2;
     }
 }
