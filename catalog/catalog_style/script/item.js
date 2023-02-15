@@ -24,7 +24,6 @@ window.addEventListener('click', function(event) {
         imgSrc: bl_hov.querySelector('#coor_img_flow').getAttribute('src'),
         itemName: bl_hov.querySelector('[data-name]').innerText,
         price: bl_hov.querySelector('.price__currency').innerText,
-        // but: bl_hov.querySelector('.in_backet').innerText,
     }
     console.log(infoCard)    
     // шаблон html
@@ -45,12 +44,11 @@ click_exit.addEventListener("click", function(event) {
 console.log("Блок с товаром закрыт")
 if ("clouse_block_descript") {
     console.log('Close')
+    // очистка элемента после закрытие блока
     let elem = document.querySelector('.cart-add_block')
     elem.innerHTML = '';
 } 
     blockItem = document.getElementById("page_item")
     blockItem.classList.toggle("active_page_item")
     blockItem.classList.toggle("no_active_page_item")
-    // очистка элемента после закрытие блока
-    
 })
