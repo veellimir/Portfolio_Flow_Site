@@ -18,7 +18,16 @@
         <h3>Ваша корзина</h3><img src="../img/close.png" alt="" id="close_corzina">
         <img src="../img/Line 220.png"  id="line_corz">
         <img src="../img/Ellipse 59.png" id="neon_pink_elips">
-        <div id="title"></div>
+        <!-- отрисовка товаров в корзине -->
+        <div class="backet_item">
+            <!-- <img src="../img/image 114.png" id="backet_img">
+            <p>лучший день</p>
+            <span>цена : 700 р</span>
+            <br>
+            <button>Удалить товар</button><button id="">Оплатить</button>
+            <br>
+            <img src="../img/Line 220.png" > -->
+        </div>
 
         
     </div>
@@ -86,7 +95,7 @@
         <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>в корзине</li>
         <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>в шляпной коробке</li>
         <img src="../img/Rectangle 66.png" id="rectang_filt_next"><li>в ящике</li>
-
+ 
         <!-- кнопка сбросить фильтр -->
         <button>Сбросить фильтр</button>
     </div>
@@ -94,14 +103,14 @@
     <div id="page_item" class="no_active_page_item">
         <img src="../img/close.png" class="clouse_block_descript" data-exit>
         <!-- /* товар в карточке */ -->
-        <div class="cart-add_block">
+        <div class="cart-add_block"> 
             <!-- <div id="cart-add_block_txt">
                 <img src="../img/image 130.png" class="img_cart-add_block">
                 <p data-name>лучший день</p>
                 <span>цена : 700 р</span>
-                <br>
-                <button id="add_corzina">В корзину</button>
-            </div> -->
+            <br> --> 
+                <!-- <button id="add_corzina" data-butt>В корзину</button> -->
+            </div>
         </div> 
     </div>
     <!-- БОЛЬШОЙ БЛОК КОНТЕНТА (ТОВАРЫ) -->
@@ -113,7 +122,7 @@
                     <span class="price__currency">700 р</span>
                     <br>
                     <button class="in_backet" data-butt>В корзину</button>
-                </div>    
+                </div> 
             </div>
             <div class="bl_hov" data-id="02">
                 <img src="../img/image 130.png" alt="" id="coor_img_flow" data-card>
@@ -121,7 +130,7 @@
                         <p data-name>лучший день</p>
                         <span class="price__currency">900 р</span>
                         <br>
-                        <button class="in_backet">В корзину</button>
+                        <button class="in_backet" data-butt>В корзину</button>
                     </div>    
                 </div>
             <div class="bl_hov" data-id="03">
@@ -130,7 +139,7 @@
                         <p data-name>лучший день</p>
                         <span class="price__currency">1200 р</span>
                         <br>
-                        <button class="in_backet">В корзину</button>
+                        <button class="in_backet" data-butt>В корзину</button>
                      </div>    
                 </div>    
             <div class="bl_hov" data-id="04">
@@ -139,7 +148,7 @@
                         <p data-name>лучший день</p>
                         <span class="price__currency">500 р</span>
                         <br>
-                        <button class="in_backet">В корзину</button>
+                        <button class="in_backet" data-butt>В корзину</button>
                     </div>    
                 </div>     
             <div class="bl_hov" data-id="05">
@@ -148,7 +157,7 @@
                         <p data-name>лучший день</p>
                         <span class="price__currency">600 р</span>
                         <br>
-                         <button class="in_backet">В корзину</button>
+                         <button class="in_backet" data-butt>В корзину</button>
                     </div>    
                 </div>
         <div class="bl_hov" data-id="06">
@@ -157,7 +166,7 @@
                 <p data-name>лучший день</p>
                 <span class="price__currency">1700 р</span>
                 <br>
-                <button class="in_backet">В корзину</button>
+                <button class="in_backet" data-butt>В корзину</button>
             </div>    
         </div>        
         <div class="bl_hov" data-id="07">
@@ -166,7 +175,7 @@
                 <p data-name>лучший день</p>
                 <span class="price__currency">2000 р</span>
                 <br>
-                <button class="in_backet">В корзину</button>
+                <button class="in_backet" data-butt>В корзину</button>
             </div>    
         </div>                
         <div class="bl_hov" data-id="08">
@@ -175,7 +184,7 @@
                     <p data-name>лучший день</p>
                     <span class="price__currency">1000 р</span>
                     <br>
-                    <button class="in_backet">В корзину</button>
+                    <button class="in_backet" data-butt>В корзину</button>
                 </div>    
             </div>
         <div class="bl_hov" data-id="09">
@@ -184,7 +193,7 @@
                 <p data-name>лучший день</p>
                 <span class="price__currency">1200 р</span>
                 <br>
-                <button class="in_backet">В корзину</button>
+                <button class="in_backet" data-butt>В корзину</button>
             </div>    
         </div>
         <div class="bl_hov" data-id="10">
@@ -193,7 +202,7 @@
                 <p data-name>лучший день</p>
                 <span class="price__currency">700 р</span>
                 <br>
-                <button class="in_backet">В корзину</button>
+                <button class="in_backet" data-butt>В корзину</button>
             </div>    
         </div>                                                                                          
     </div>
@@ -217,5 +226,6 @@
     
     <script src="../script/script.js"></script>
     <script src="catalog_style/script/item.js"></script>
+    <script src="catalog_style/script/backet.js"></script>
 </body>
 </html>
