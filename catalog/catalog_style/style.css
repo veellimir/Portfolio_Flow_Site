@@ -12,6 +12,7 @@
     height: 1000px;
     z-index: 1;
     transition: all 0.4s ease;
+    z-index: 60;
 }
 #dropdown_box >h3 {
     color: #43FFD2;
@@ -29,6 +30,46 @@
 #close_corzina {
     padding-left: 120px;
     cursor: pointer;
+}
+/* товар в корзине */
+.backet_item {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#backet_img {
+    width: 200px;
+    height: 200px;
+}
+.backet_item p {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-top: 20px; 
+}
+.backet_item span {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: white;
+}
+.backet_item button {
+    width: 100px;
+    height: 40px;
+    background-color: #43FFD2;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #1c1d1d;
+    border: none;
 }
 #line_corz {
     margin-left: 30px;
