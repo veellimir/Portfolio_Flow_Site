@@ -1,7 +1,7 @@
 // описание товара при клики на товар
 const cartWrapper = document.querySelector('.cart-add_block')
 // добавление карточек в блок
-document.addEventListener('click', function(event) {
+window.addEventListener('click', function(event) {
     if (event.target.hasAttribute('data-card')) {
         // document.addEventListener("click", function() {
             console.log("Открыт блок с товаром")
@@ -12,18 +12,17 @@ document.addEventListener('click', function(event) {
     }
     // удаление блока с товаром
     click_exit = document.querySelector('.clouse_block_descript')
-    document.addEventListener("click", function(event) {
+    click_exit.addEventListener("click", function(event) {
     console.log("Блок с товаром закрыт")
     if ("clouse_block_descript") {
         console.log('Close')
         let elem = document.querySelector('.cart-add_block')
         elem.innerHTML = '';
+    } 
         blockItem = document.getElementById("page_item")
         blockItem.classList.toggle("active_page_item")
         blockItem.classList.toggle("no_active_page_item")
         // очистка элемента после закрытие блока
-    } 
-        
         
 })
 })   
