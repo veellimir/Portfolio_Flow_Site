@@ -67,6 +67,10 @@ function OnasOpis() {
     openonas = "onas/onas.html"
     location.href = openonas;
 }
+function Diliv_ry () {
+    openDiliv = "dilivery/dilivery.html"
+    location.href = openDiliv;
+}
 
 // открытие соц сетей
 function OnInsta() {

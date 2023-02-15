@@ -437,6 +437,7 @@ body {
     top: 150px;
     left: 50%;
     transform: translate(-50%);
+    z-index: 50;
 }
 .no_active_page_item {
     position: fixed;
